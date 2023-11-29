@@ -13,7 +13,6 @@
 		A192F10E2B0CD5DA00FF92A1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A192F10C2B0CD5DA00FF92A1 /* Main.storyboard */; };
 		A192F1102B0CD5DC00FF92A1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A192F10F2B0CD5DC00FF92A1 /* Assets.xcassets */; };
 		A192F1132B0CD5DC00FF92A1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A192F1112B0CD5DC00FF92A1 /* LaunchScreen.storyboard */; };
-		A1AF5D4B2B16100C00130A24 /* mokutekichi.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A1AF5D4A2B16100B00130A24 /* mokutekichi.mp3 */; };
 		A1AF5D6D2B17327400130A24 /* bird.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A1AF5D6C2B17327400130A24 /* bird.mp3 */; };
 /* End PBXBuildFile section */
 
@@ -26,7 +25,6 @@
 		A192F10F2B0CD5DC00FF92A1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A192F1122B0CD5DC00FF92A1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A192F1142B0CD5DC00FF92A1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A1AF5D4A2B16100B00130A24 /* mokutekichi.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = mokutekichi.mp3; sourceTree = "<group>"; };
 		A1AF5D6C2B17327400130A24 /* bird.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = bird.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -67,7 +65,6 @@
 				A192F10F2B0CD5DC00FF92A1 /* Assets.xcassets */,
 				A192F1112B0CD5DC00FF92A1 /* LaunchScreen.storyboard */,
 				A192F1142B0CD5DC00FF92A1 /* Info.plist */,
-				A1AF5D4A2B16100B00130A24 /* mokutekichi.mp3 */,
 				A1AF5D6C2B17327400130A24 /* bird.mp3 */,
 			);
 			path = AlertMapTeamA;
@@ -134,7 +131,6 @@
 				A192F1132B0CD5DC00FF92A1 /* LaunchScreen.storyboard in Resources */,
 				A1AF5D6D2B17327400130A24 /* bird.mp3 in Resources */,
 				A192F1102B0CD5DC00FF92A1 /* Assets.xcassets in Resources */,
-				A1AF5D4B2B16100C00130A24 /* mokutekichi.mp3 in Resources */,
 				A192F10E2B0CD5DA00FF92A1 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

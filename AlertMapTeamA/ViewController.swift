@@ -182,6 +182,7 @@ class ViewController: UIViewController, CLLocationManagerDelegate, MKMapViewDele
     }
     
     
+    //タイマーを使ってシミュレーションで動かす
     func startFollowingRoute() {
         guard !routeSteps.isEmpty else { return }
         simulationTimer?.invalidate()
@@ -195,9 +196,12 @@ class ViewController: UIViewController, CLLocationManagerDelegate, MKMapViewDele
             mapView.setCenter(stepCoordinate, animated: true)
 
             // 特定の地点との距離を計算
+            //現在地とalertCoordinateで登録した地点との距離をやっているよ。
+            //何箇所も登録したい場合はここを変えていこう
             let distance = CLLocation(latitude: stepCoordinate.latitude, longitude: stepCoordinate.longitude).distance(from: CLLocation(latitude: alertCoordinate.latitude, longitude: alertCoordinate.longitude))
 
             // 特定の地点に近づいたらアラートを鳴らす
+            //50mに設定してあるけど、好きに変更してね！
             if distance < 50 {
                 
                 playAlertSound()
@@ -230,6 +234,7 @@ class ViewController: UIViewController, CLLocationManagerDelegate, MKMapViewDele
                    return
                }
                
+        //好きな音の素材にしてね
                guard let soundURL = Bundle.main.url(forResource: "bird", withExtension: "mp3") else {
                    print("音声ファイルが見つかりません")
                    return
