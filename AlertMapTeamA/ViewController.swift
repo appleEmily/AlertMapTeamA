@@ -10,23 +10,29 @@ import MapKit
 import CoreLocation
 import AVFoundation
 
+//数字系だったり、デザインを変えていこう！
+
 
 class ViewController: UIViewController, CLLocationManagerDelegate, MKMapViewDelegate {
     
     @IBOutlet weak var mapView: MKMapView!
+    
     let locationManager = CLLocationManager()
     
     var routeSteps: [CLLocationCoordinate2D] = []
     var currentStepIndex = 0
     
-    //動かすためにタイマー
+    //シミュレーションで動かすためにタイマー
     var simulationTimer: Timer?
     
     //動きをピンで表示するためのもの。
     var currentLocationAnnotation: MKPointAnnotation?
     
+    //座標は好きに変えよう！
+    
     // 甲府駅
     let startCoordinate = CLLocationCoordinate2D(latitude: 35.667, longitude: 138.569)
+    
     // 近くの場所
     let endCoordinate = CLLocationCoordinate2D(latitude: 35.66839907403077, longitude: 138.5698015058478)
     
@@ -40,7 +46,7 @@ class ViewController: UIViewController, CLLocationManagerDelegate, MKMapViewDele
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        //魔法だと思って書いてね
+        //魔法だと思ってね
         mapView.delegate = self
         
         //位置情報許可アラート表示のためのメソッドを呼ぶよ
